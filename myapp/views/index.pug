@@ -1,0 +1,10 @@
+extends layout 
+
+block content
+  .title  
+    h1= title
+    p Welcome to #{title}
+  block head  
+    include navigation_links
+  .contentbody
+    block content_body
