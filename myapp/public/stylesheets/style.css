@@ -49,3 +49,7 @@ a {
   margin: auto;
   text-align: left;
 }
+
+.contentbody >  h2{
+  border-bottom: 2px dashed #303030;
+}
