@@ -2,13 +2,13 @@ var express = require('express');
 var router = express.Router();
 var Project = require('../models/project')
 
-const MdParser = require('../libs/mdparser'); 
+const ProjectParser = require('../libs/projectparser'); 
 
 /* GET home page. */
 router.get('/', async function(req, res, next) {
-  const proProjects = MdParser. parseProjectGroupMarkdowns(await Project.find({type: 'Professional'}));
-  const personalProjects =  MdParser. parseProjectGroupMarkdowns(await Project.find({type: 'Personal'}));
-  const gamejamProjects =  MdParser. parseProjectGroupMarkdowns(await Project.find({type: 'Gamejam'}));
+  const proProjects = ProjectParser. parseProjectGroupMarkdowns(await Project.find({type: 'Professional'}));
+  const personalProjects =  ProjectParser. parseProjectGroupMarkdowns(await Project.find({type: 'Personal'}));
+  const gamejamProjects =  ProjectParser. parseProjectGroupMarkdowns(await Project.find({type: 'Gamejam'}));
   res.render('index', { title: 'Dhruv Pant', proProjects: proProjects, personalProjects: personalProjects, gamejamProjects: gamejamProjects });
 });
 

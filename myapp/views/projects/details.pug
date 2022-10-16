@@ -5,6 +5,6 @@ block content_body
     img(src=project.thumbnailUrl, alt="")
     .contentbody
         != project.details
-        form(action= 'edit/'+ project.id, method='GET')
-            input#id(type= 'Hidden', value= project.id)
-            input(type='submit', value= 'Edit')
+    form(action= 'edit/'+ project.id, method='GET')
+        input#id(type= 'Hidden', value= project.id)
+        input(type='submit', value= 'Edit')

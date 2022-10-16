@@ -3,7 +3,7 @@ var router = express.Router();
 var Project = require('../models/project')
 
 //Including markdown for parsing
-const MdParser = require('../libs/mdparser'); 
+const ProjectParser = require('../libs/projectparser'); 
 
 //Project type enum
 const ProjectType = {
@@ -21,13 +21,8 @@ router.get('/add', function(req, res, next) {
 router.get('/:id', async function(req,res){
     try {
         const project = await Project.findById(req.params.id);
-        
-        //creting a renderable project
-        let rend_project = project;
-
-        //parsing markdowntexts before rendering
-        rend_project = MdParser.parseProjectMarkdowns(project);
-
+        let rend_project = project;                                  //creating a renderable project
+        rend_project = ProjectParser.parseProjectMarkdowns(project); //parsing markdowntexts before rendering
         res.render('projects/details', {project: rend_project});
     } catch (error) {
         res.redirect('error', {error: error});   
@@ -52,7 +47,8 @@ router.post('/add',async function(req,res,next) {
         thumbnailUrl: req.body.thumbnailUrl,
         contributions : req.body.contributions,
         year: req.body.year,
-        type: req.body.projectType
+        type: req.body.projectType,
+        tools: req.body.tools
     })
     try {
         await project.save();
@@ -72,7 +68,7 @@ router.post('/edit/:id', async function(req, res){
         project.contributions = req.body.contributions;
         project.year = req.body.year;
         project.type = req.body.projectType;
-        
+        project.tools = req.body.tools;
         await project.save();
         res.redirect('/');
     } catch (error) {

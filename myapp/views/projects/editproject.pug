@@ -19,6 +19,9 @@ block content_body
             label(for="contributions") Contributions: 
         textarea#contributions(name="contributions", cols="150", rows="10")= project.contributions
         p
+            label(for="tools") Tools: 
+        input#tools(type='text', name='tools', value= project.tools)
+        p
             label(for="projectType") Project Type: 
         select#projectType(name="projectType", value= project.type)
             each key,value in projectTypes

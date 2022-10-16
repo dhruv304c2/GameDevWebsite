@@ -75,6 +75,7 @@ a {
   text-align: center;
   border: 3px solid white;
   background-color: rgba(0, 0, 0, 0.185);
+  padding-left: 3%;
 }
 
 .input-description{
@@ -119,6 +120,19 @@ a {
 .card:hover {
   background-color: white;
   color: black;
+}
+
+.tools-bar{
+  height: fit-content;
+  width: 160px;
+  align-items: left;
+  color: white;
+  font-size: 14px;
+}
+
+.tools-bar > p > img{
+  width: 50px;
+  height: 50px;
 }
 
 .grid{
