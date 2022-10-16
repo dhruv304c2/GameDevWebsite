@@ -12,6 +12,7 @@
     "http-errors": "~1.6.3",
     "jstransformer-markdown-it": "^3.0.0",
     "markdown-it": "^13.0.1",
+    "mongoose": "^6.6.5",
     "morgan": "~1.9.1",
     "pug": "2.0.0-beta11",
     "save": "^2.9.0"

@@ -1,0 +1,7 @@
+.project-entry
+    a(href= 'project/'+val.id)
+        .card.center
+            - var source = val.thumbnailUrl;
+                img(src=source, alt= "")
+                p= val.title
+    != val.contributions

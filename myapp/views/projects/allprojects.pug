@@ -1,0 +1,10 @@
+h2 Projects
+.grid
+    each val in projects 
+        .project-entry
+            .card.center
+                - var source = val.thumbnailUrl;
+                img(src=source, alt= "")
+                p= val.title
+            p
+                :markdown-it= val.contributions

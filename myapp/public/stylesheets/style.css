@@ -14,7 +14,11 @@ a {
 }
 
 .title{
-  padding: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
 }
 
 .navbar{
@@ -58,4 +62,54 @@ a {
 
 .contentbody >  h2{
   border-bottom: 2px dashed #303030;
+}
+
+.input-description{
+  text-align:start;
+  width: 500px;
+  height: 100px;
+}
+
+.project-entry{
+  display: block;
+  width: 220px;
+}
+.card{
+  background-color: rgb(223, 223, 223);
+  font-size: large;
+  align-content: center;
+  padding: 10px;
+}
+
+.card > *{
+  margin: 0px;
+}
+
+.card > img{
+  height: 200px;
+  width: 200px;
+}
+
+.card:hover {
+  background-color: black;
+  color: white;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  min-width: 70%;
+}
+
+.head-spacer{
+  height: 200px;
+  width: 100%;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -200px;
+  visibility: hidden;
 }

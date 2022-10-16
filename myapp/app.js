@@ -6,8 +6,10 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var aboutmeRouter = require('./routes/aboutme');
+var projectRouter = require('./routes/project');
 var usersRouter = require('./routes/users');
 
+//Express
 var app = express();
 
 // view engine setup
@@ -19,10 +21,16 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.urlencoded({extended:false}));
 
 app.use('/', indexRouter);
 app.use('/aboutme', aboutmeRouter);
+app.use('/project', projectRouter);
 app.use('/users', usersRouter);
+
+//Mongoose
+const mongoose = require('mongoose');
+mongoose.connect('mongodb+srv://DhruvPant:eMytYxNOjhCOvY6y@cluster0.3acwr3g.mongodb.net/test');
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

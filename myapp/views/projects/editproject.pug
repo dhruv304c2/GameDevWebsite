@@ -1,0 +1,28 @@
+extend ../index 
+
+block content_body
+    form(action='', method='POST')
+        
+        p
+            label(for="title") Title: 
+        input#title(type='text', name='title', value= project.title)
+        p
+            label(for="thumbnailUrl") Image link: 
+        input#thumbnailUrl(type='text', name='thumbnailUrl', value= project.thumbnailUrl)
+        p
+            label(for="year") Year: 
+        input#year(type='number', name='year', value= project.year)
+        p
+            label(for="description") Details: 
+        textarea#details(name="details", cols="30", rows="10")= project.details
+        p
+            label(for="contributions") Contributions: 
+        textarea#contributions(name="contributions", cols="30", rows="10")= project.contributions
+        p
+            label(for="projectType") Project Type: 
+        select#projectType(name="projectType", value= project.type)
+            each key,value in projectTypes
+                option(value=value)= value    
+        p
+            input(type='submit', value='Submit')
+            

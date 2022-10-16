@@ -2,9 +2,21 @@ extends layout
 
 block content
   .title  
-    h1 Dhruv Pant
-    p Welcome to Dhruv's game dev portfolio
-  block head  
-    include navigation_links
-  .contentbody
-    block content_body
+      h1 Dhruv Pant
+      p Welcome to Dhruv's game dev portfolio
+      include navigation_links
+  .head-spacer
+  block content_body
+    a.anchor#Aboutme
+    .contentbody
+      include aboutme
+    a.anchor#ProfessionalProjects
+    .contentbody
+      include projects/professionalProjects
+    a.anchor#PersonalProjects
+    .contentbody
+      include projects/personalProjects
+    a.anchor#GameJamProjects
+    .contentbody
+      include projects/gamejamProjects
+  .head-spacer
