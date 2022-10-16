@@ -183,6 +183,14 @@ a.anchor {
   height: 70px; 
 }
 
+.sidebar-yt > img{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top:75px;
+  left: 5px;
+}
+
 .sidebar-discord {
   background-color: rgb(110, 50, 221);
   width: 70px;
