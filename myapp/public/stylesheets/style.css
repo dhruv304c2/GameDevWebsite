@@ -207,16 +207,32 @@ a.anchor {
 }
 
 .sidebar-discord {
-  background-color: rgb(110, 50, 221);
+  background-color: rgb(98, 61, 184);
   width: 70px;
   height: 70px; 
 }
 
+.sidebar-discord > img{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top:145px;
+  left: 5px;
+}
+
 .sidebar-reddit {
-  background-color: rgb(248, 164, 37);
+  background-color: rgb(248, 79, 28);
   width: 70px;
   height: 70px;
   border-bottom-right-radius: 10px;  
+}
+
+.sidebar-reddit > img{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top:215px;
+  left: 5px;
 }
 
 .bg {
