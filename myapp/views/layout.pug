@@ -8,7 +8,7 @@ html
     .sidebar
       a(href= 'https://www.linkedin.com/in/dhruv-pant-742343204/', target= '_blank')
         .sidebar-linkedin
-          img(src="https://imgur.com/QV258ne", alt="")
+          img(src="https://i.ibb.co/ZmptdDK/174857.png", alt="")
       a
         .sidebar-yt
       a
@@ -21,9 +21,12 @@ html
 script. 
     window.onscroll = function() {scrollFunction()};
     function scrollFunction() {
-      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
         document.getElementById("header").style.fontSize = "0px";
+        document.getElementById("navbar").style.backgroundColor = "black";
+        
       } else {
         document.getElementById("header").style.fontSize = "14px";
+        document.getElementById("navbar").style.backgroundColor = "transparent";
       }
     }
