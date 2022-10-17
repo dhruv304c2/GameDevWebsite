@@ -5,7 +5,7 @@ md = new MarkdownIt();
 
 //Embedds for tool logos
 let UnityEmb = '![Alt text](https://i.ibb.co/zmMQsS0/unity.png "Unity")';
-let CSEmb = '![Alt text](https://i.ibb.co/Y22hN2n/c.png "C#")';
+let CSEmb = '![Alt text](https://i.ibb.co/cL5FgBR/c-sharp.png "C#")';
 
 
 //Takes a tool string and converts it into html
