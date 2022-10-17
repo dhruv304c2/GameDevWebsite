@@ -45,10 +45,11 @@ a {
 }
 
 .navbar{
-  display:flex;
-  justify-content:center;
+  display:-webkit-inline-flex;
+  justify-content: center;
   max-width: 30%;
   margin: auto;
+  font-size: small;
 }
 
 #navbar{
@@ -58,7 +59,6 @@ a {
 .navbar-button {
   color: white;
   border: 3px solid white;
-  font-size: small;
   align-content: center;
   white-space: nowrap;
 
@@ -80,7 +80,6 @@ a {
 .navbar-button-green{
   color: greenyellow;
   border: 3px solid greenyellow;
-  font-size: medium;
   align-content: center;
   white-space: nowrap;
 
