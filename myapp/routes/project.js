@@ -45,6 +45,8 @@ router.post('/add',async function(req,res,next) {
         title: req.body.title,
         details: req.body.details,
         thumbnailUrl: req.body.thumbnailUrl,
+        embeddedVideoUrl: req.body.embeddedVideoUrl,
+        githubUrl: req.body.githubUrl,
         contributions : req.body.contributions,
         year: req.body.year,
         type: req.body.projectType,
@@ -64,7 +66,9 @@ router.post('/edit/:id', async function(req, res){
         const project = await Project.findById(req.params.id);
         project.title = req.body.title;
         project.details = req.body.details;
-        project.thumbnailUrl = req.body.thumbnailUrl;
+        project.thumbnailUrl = req.body.thumbnailUrl,
+        project.embeddedVideoUrl = req.body.embeddedVideoUrl,
+        project.githubUrl = req.body.githubUrl,
         project.contributions = req.body.contributions;
         project.year = req.body.year;
         project.type = req.body.projectType;

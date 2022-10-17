@@ -5,6 +5,8 @@ const projectSchema = new Schema({
     title: String,
     details: String,
     thumbnailUrl : String,
+    embeddedVideoUrl: String,
+    githubUrl: String,
     contributions: String,
     year: Number,
     type: String,
