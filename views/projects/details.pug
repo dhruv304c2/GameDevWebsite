@@ -8,12 +8,14 @@ block content_body
             include ../_github-link
     .banner
         img(src=project.thumbnailUrl, alt="")
-        iframe(src= project.embeddedVideoUrl, frameborder="0", width="533px", height="300px") 
+        if project.embeddedVideoUrl !== ''
+            iframe(src= project.embeddedVideoUrl, frameborder="0", width="533px", height="300px") 
     .tools 
         h2 Tools:
         != project.tools
     .contentbody.align-left
         != project.details
+        != project.contributions
     //form(action= 'edit/'+ project.id, method='GET')
         input#id(type= 'Hidden', value= project.id)
         input(type='submit', value= 'Edit')
