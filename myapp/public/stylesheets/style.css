@@ -319,6 +319,11 @@ a.anchor {
   height: 40px;
 }
 
+.footer{
+  height: 300px;
+  width: 100%;
+}
+
 .bg {
   width: 100vw;
   height: 100vh;
