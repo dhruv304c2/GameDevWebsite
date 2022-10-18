@@ -27,7 +27,7 @@ body {
 }
 
 a {
-  margin: 5%;
+  margin: 1%;
   text-decoration: none;
 }
 
@@ -113,6 +113,20 @@ a {
   padding-right: 3%;
   padding-top: 1%;
   padding-bottom: 1%;
+}
+
+.contentbody > p> a{
+  color: white;
+  margin: 0%;
+  font-size: medium;
+  border: 3px solid white; 
+  transition: 0.2s;
+  padding: 2px;
+}
+
+.contentbody > p> a:hover {
+  color: black;
+  background-color: white;
 }
 
 .align-left{
