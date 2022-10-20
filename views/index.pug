@@ -3,8 +3,11 @@ extends layout
 block content
   .title#navbar  
       .div#header
-        h1 DHRUV PANT
-        p Unity3D, C# Gameplay Developer looking for work.
+        br
+        br
+        include:markdown-it Markdowns/Header.md
+        br
+        br
       include navigation_links
   .head-spacer
   block content_body
