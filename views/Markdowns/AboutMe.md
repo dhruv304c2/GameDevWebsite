@@ -2,9 +2,9 @@
 
 Hi,
 
-I am game developer/programmer from India,
+I am programmer specialised in Unity and C#,
 
-I am Unity expert who is familier with C++, javascript, Node.js and .Net
+I am also proficient with C++, javascript, Node.js and .Net
 
 I enjoy creating polished games with great gameplay
 

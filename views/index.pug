@@ -3,13 +3,13 @@ extends layout
 block content
   .title#navbar  
       .div#header
-        h1 Dhruv Pant
-        p welcome to my portfolio
+        h1 DHRUV PANT
+        p Unity3D C# Gameplay Developer looking for work.
       include navigation_links
   .head-spacer
   block content_body
     a.anchor#Aboutme
-    .contentbody.align-left
+    .contentbody.align-left.aboutMe
       include aboutme
     a.anchor#ProfessionalProjects
     .contentbody
@@ -17,8 +17,8 @@ block content
     a.anchor#PersonalProjects
     .contentbody
       include projects/personalProjects
-    a.anchor#GameJamProjects
-    .contentbody
+    //a.anchor#GameJamProjects
+    //.contentbody
       include projects/gamejamProjects
   .head-spacer
   .footer

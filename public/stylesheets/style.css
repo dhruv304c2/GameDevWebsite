@@ -110,6 +110,7 @@ a {
   margin: auto;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.185);
+  font-size: large;
   padding-left: 3%;
   padding-right: 3%;
   padding-top: 1%;
@@ -142,16 +143,10 @@ a {
 
 .project-entry{
   display: block;
-  width: 220px;
-  font-size: 0px;
-  color: rgba(255, 255, 255, 0);
+  width: 300px;
+  color: greenyellow;
   transition: all 0.3s;
   text-align: left;
-}
-
-.project-entry:hover {
-  font-size: 14px;
-  color: greenyellow;
 }
 
 .card{
@@ -160,6 +155,7 @@ a {
   font-size: large;
   align-content: center;
   padding: 10px;
+  width: 200px;
 
   transition: all 0.2s;
 }
