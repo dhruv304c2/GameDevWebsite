@@ -16,6 +16,3 @@ block content_body
     .contentbody.align-left
         != project.details
         != project.contributions
-    //form(action= 'edit/'+ project.id, method='GET')
-        input#id(type= 'Hidden', value= project.id)
-        input(type='submit', value= 'Edit')
