@@ -1,10 +1,19 @@
+
 .project-entry
-    a(href= 'project/'+val.id)
-        .card.center
-            - var source = val.thumbnailUrl;
-                img(src=source, alt= "")
-                p= val.title
-        .tools-bar 
-            p Tools:
-            != val.tools
-    != val.contributions
+    h2= val.title
+    .project-entry-layout
+        .project-entry-visuals
+            a(href= 'project/'+val.id)
+            .card.center
+                - var sourceVid = val.embeddedVideoUrl;
+                if sourceVid == ''
+                    - var source = val.thumbnailUrl;
+                    img(src=source, alt= "")
+                else
+                    iframe(src= sourceVid, frameborder="0", width="450px", height="300px")
+                    
+            .tools-bar 
+                p Tools:
+                != val.tools
+        .project-entry-text
+            != val.contributions

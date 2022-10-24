@@ -5,8 +5,8 @@ html{
 body {
   font-family: Consolas,"courier new";
   font-size: 14px;
-  color: white;
-  background-color: rgb(40, 2, 51);
+  color: black;
+  background-color: rgb(255, 255, 255);
 }
 
 .banner{
@@ -36,7 +36,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgb(40, 2, 51);
+  background-color: black;
   width: 100%;
   height: fit-content;
 }
@@ -44,6 +44,7 @@ a {
 #header{
   transition: all 0.2s;
   height: 200px;
+  color: white;
 }
 
 .navbar{
@@ -63,7 +64,7 @@ a {
   border: 3px solid white;
   align-content: center;
   white-space: nowrap;
-  font-size: small;
+  font-size: medium;
   margin: 0;
 
   padding-top: 2px;
@@ -76,7 +77,7 @@ a {
 
 .navbar-button:hover {
   background-color: white;
-  color: rgb(47, 0, 61);
+  color: black;
 }
 
 .navbar-button-green{
@@ -84,7 +85,7 @@ a {
   border: 3px solid greenyellow;
   align-content: center;
   white-space: nowrap;
-  font-size: small;
+  font-size: medium;
 
   margin: 0;
 
@@ -112,7 +113,8 @@ a {
   margin: auto;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.185);
-  font-size: small;
+  font-size: large;
+  font-weight: bold;
   padding-left: 3%;
   padding-right: 3%;
   padding-top: 1%;
@@ -120,17 +122,17 @@ a {
 }
 
 .contentbody > p> a{
-  color: white;
+  color: black;
   margin: 0%;
   font-size: small;
-  border: 3px solid white; 
+  border: 3px solid black; 
   transition: 0.2s;
   padding: 2px;
 }
 
 .contentbody > p> a:hover {
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: black;
 }
 
 .align-left{
@@ -145,19 +147,36 @@ a {
 
 .project-entry{
   display: block;
-  width: 300px;
-  color: greenyellow;
+  width: auto;
+  height: fit-content;
   transition: all 0.3s;
   text-align: left;
+  background-color: rgba(255, 255, 255, 0.568);
+  border-radius: 1%;
+  padding: 5%;
+  margin: 1%;
+}
+
+.project-entry-text{
+  margin-left: 5%;
+}
+
+.project-entry-visuals{
+  display: block;
+}
+
+.project-entry-layout{
+  display: flex;
 }
 
 .card{
+  display: flex;
   background-color: black;
   color: white;
   font-size: small;
   align-content: center;
   padding: 10px;
-  width: 200px;
+  width: fit-content;
 
   transition: all 0.2s;
 }
@@ -171,16 +190,16 @@ a {
   width: 200px;
 }
 
-.card:hover {
+/* .card:hover {
   background-color: white;
   color: black;
-}
+} */
 
 .tools-bar{
   height: fit-content;
   width: 160px;
   align-items: left;
-  color: white;
+  color: black;
   font-size: 14px;
 }
 
@@ -208,7 +227,7 @@ a {
 
 .grid{
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto;
   padding: 10px;
   min-width: 70%;
 }
