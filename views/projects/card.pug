@@ -3,7 +3,6 @@
     h2= val.title
     .project-entry-layout
         .project-entry-visuals
-            a(href= 'project/'+val.id)
             .card.center
                 - var sourceVid = val.embeddedVideoUrl;
                 if sourceVid == ''
@@ -17,3 +16,5 @@
                 != val.tools
         .project-entry-text
             != val.contributions
+    .button-link
+        a(href= 'project/'+val.id) Learn More

@@ -124,13 +124,31 @@ a {
 .contentbody > p> a{
   color: black;
   margin: 0%;
-  font-size: small;
+  font-size: medium;
   border: 3px solid black; 
   transition: 0.2s;
   padding: 2px;
 }
 
 .contentbody > p> a:hover {
+  color: white;
+  background-color: black;
+}
+
+.button-link{
+  text-align: right;
+}
+
+.button-link > a{
+    color: black;
+    margin: 0%;
+    font-size: medium;
+    border: 3px solid black; 
+    transition: 0.2s;
+    padding: 2px;
+}
+
+.button-link> a:hover{
   color: white;
   background-color: black;
 }
